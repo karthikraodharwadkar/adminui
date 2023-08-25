@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    overflow: hidden;
+}
+#container{
+    height:100vh;
+    width:100%;
+}
+#table-content{
+    max-width:100%; 
+}
+#header h3{
+    text-align: center;
+    font-size: 40px;
+    background-color: aqua;
+    margin: 5px; 
+}
+#error{
+    text-align: center;
+}
+.bi-trash3-fill{
+    color: red;
+    cursor: pointer;
+}
+.bi-pencil-square{
+    cursor: pointer;
+}
+#chkboxall{
+    cursor: pointer;
+}
+.singleCheckbox{
+    cursor: pointer;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    padding: 10px;
+}
+#footer-pagination{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    width: max-content;
+    align-items: center;
+}
+#nav{
+    display: flex;
+    gap:5px;
+    justify-content: space-evenly;
+}
+span{
+    font-size:15px;
+    border:  lightslategray solid;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width:40px;
+    height:35px;
+    font-weight: 600;
+    text-align: center;
+    background-color:lightcyan;
+}
+
+@media only screen and (max-width: 768px) {
+    #header h3{
+        font-size: 20px;
+    }
+    #header{
+        width: 100%;
+    }
+    .form-control{
+        height: 30px;
+    }
+    .table thead tr th{
+        font-size: 12px;
+    }
+    .rowelements tr td{
+        font-size: 10px;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+    }
+    .btn-danger{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    span{
+    font-size:18px;
+    padding:0px;
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    text-align: center; 
+    }
+}
